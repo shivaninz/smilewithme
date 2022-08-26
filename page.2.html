@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Service</title>
+    <link rel="stylesheet" href="page.css">
+    <link rel="shortcut icon" href="img/1.png">
+  </head>
+  <body>
+  <header id="header">
+    <a href="index.html"><img src="img/1.png" width="100" height="100" class="logo"></a>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="pod.html#about-us">About</a></li>
+        <li><a href="pod.html">Podcast</a></li>
+        <li><a href="page.2.html">Service</a></li>
+      </ul>
+  </header>
+  <section>
+    <h2 id="text" ><span>A Deep Dive into</span><br>Service</h2>
+    <img src="img/bird1.png" id="bird1">
+    <img src="img/bird2.png" id="bird2">
+    <img src="img/forest.png" id="forest">
+    <img src="img/rocks.png" id="rocks">
+    <img src="img/water.png" id="water">
+  </section>
+   
+  <div class="sec" id="sec">
+    <h2>The World is our Town and Everyone is our Family</h2>   
+  </div>
+  <div class="grid">
+    <div class="grid-item">
+      <div class="card">
+        <img class="card-img" src="img/28158874662_5e27a294f0_k.jpeg" alt="PADI" />
+        <div class="card-content">
+          <h1 class="card-header">PADI Aware</h1>
+          <p class="card-text">
+              Project AWARE is a nonprofit organization working with volunteer scuba divers to protect the oceans. Project Aware has offices in UK, US, and Australia, supporting divers acting in their own communities, to implement lasting change in two core areas: shark conservation and marine litter.
+          </p>
+          <a href="https://www.padi.com/aware"><button class="card-btn">Support Here <span>&rarr;</span></button></a>
+        </div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="card">
+        <img
+          class="card-img"
+          src="img/eat my lunch .jpeg"
+          alt="eatmylunch"
+        />
+        <div class="card-content">
+          <h1 class="card-header">Eat My Lunch</h1>
+          <p class="card-text">
+              This Team's model of Buy One, Give One makes it so easy for anyone to contribute through the purchase of something as simple as a lunch.They are the catering choice that makes a big difference. Every lunch you buy means we can give a lunch to a Kiwi kid who would otherwise go without. It’s a little gesture that’s had a great impact for so many Kiwi kids. With a good lunch in their tummies, the kids do better in so many ways from helping them focus on learning to simply just putting a smile on their faces.</strong>.
+          </p>
+          <a href="https://eatmylunch.nz/"><button class="card-btn">Support Here <span>&rarr;</span></button></a>
+        </div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="card">
+        <img class="card-img" src="img/pencils-of-promise .webp" alt=" Pencils of Promise" />
+        <div class="card-content">
+          <h1 class="card-header">Pencils-of-Promise</h1>
+          <p class="card-text">
+              We’re Reshaping the Landscape of Global Education
+              We believe every child should have access to quality education. We create schools, programs and global communities around the common goal of education for all. 100% of online donations go to PoP programs.
+          </p>
+          <a href="https://pencilsofpromise.org/take-action/"><button class="card-btn">Support Here <span>&rarr;</span></button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+
+
+  <script>
+    let text = document.getElementById('text');
+    let bird1 = document.getElementById('bird1');
+    let bird2 = document.getElementById('bird2');
+    let btn = document.getElementById('btn');
+    let rocks = document.getElementById('rocks');
+    let forest = document.getElementById('forest');
+    let water = document.getElementById('water');
+    let header = document.getElementById('header');
+
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+      text.style.top = 50 + value * -0.5 + '%';
+      bird1.style.top = value * -1.5 + 'px';
+      bird1.style.left = value * -2 + 'px';
+      bird2.style.top = value * -1.5 + 'px';
+      bird2.style.left = value * 2 + 'px'; 
+      rocks.style.top = value * -0.12 + 'px';
+      forest.style.top = value * 0.25 + 'px';
+      header.style.top = value * 0.5 + 'px';
+    })
+  </script>
+  </body>
+</html>
+  
